@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configure Gemini API
-genai.configure(api_key=os.getenv("AIzaSyBYu_Iht_hVjXR-QaMP87h_ea4BtJJmrM4"))
+genai.configure(api_key=os.getenv("AIzaSyCDkLkZ8rhR1AKbKU1Bzn9FkBHYkbFZXWo"))
 
 # Create Gemini Flash model
 model = genai.GenerativeModel(
@@ -51,3 +51,4 @@ if user_input:
 
     with st.chat_message("assistant"):
         st.write(response.text)
+
